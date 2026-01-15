@@ -1,0 +1,39 @@
+{
+  "name": "squam",
+  "displayName": "Squam",
+  "description": "Syntax highlighting for the Squam programming language",
+  "version": "0.1.0",
+  "publisher": "squam",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "squam",
+    "scripting",
+    "syntax"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "squam",
+        "aliases": ["Squam", "squam"],
+        "extensions": [".squ"],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/squam.svg",
+          "dark": "./icons/squam.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "squam",
+        "scopeName": "source.squam",
+        "path": "./syntaxes/squam.tmLanguage.json"
+      }
+    ]
+  }
+}
